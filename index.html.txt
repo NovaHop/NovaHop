@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketing Practice Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practice landing page for marketing, analytics and tracking">
+
+  <!-- 🔴 Google Tag Manager (HEAD) -->
+  <!-- PASTE GTM HEAD CODE HERE -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      background: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 40px;
+    }
+
+    .cta-btn:hover {
+      background: #0056b3;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button.submit-btn {
+      width: 100%;
+      background: #28a745;
+      color: white;
+      padding: 12px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.submit-btn:hover {
+      background: #1e7e34;
+    }
+
+    .success {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🔴 Google Tag Manager (BODY) -->
+<!-- PASTE GTM BODY CODE HERE -->
+
+<div class="container">
+
+  <h1>Learn Marketing & Analytics Practically</h1>
+  <p>This landing page is created for tracking, funnels, and conversion practice.</p>
+
+  <!-- CTA BUTTON -->
+  <button class="cta-btn" id="cta-button">
+    Get Free Marketing Guide
+  </button>
+
+  <!-- FORM -->
+  <form id="lead-form">
+    <h2>Sign Up Now</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit" class="submit-btn">
+      Submit
+    </button>
+
+    <div class="success" id="success-message">
+      ✅ Form submitted successfully!
+    </div>
+  </form>
+
+</div>
+
+<script>
+  document.getElementById("lead-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("success-message").style.display = "block";
+  });
+</script>
+
+</body>
+</html>
